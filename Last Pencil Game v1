@@ -1,0 +1,24 @@
+
+total = 0
+print("how many players will be playing today?")
+number_of_players = int(input())
+player_names = []
+
+print("Please input their names:")
+for n in range(number_of_players):
+    player_names.append(input())
+    if len(player_names) == number_of_players:
+        break
+
+print("Who is the first player?")
+user_input = input()
+if user_input not in player_names:
+    print("Not in list")
+else:
+    print(f"Let's welcome {user_input}!")
+    
+print("How many pencils would you like to use:")
+pencils = int(input())
+
+
+
